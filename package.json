@@ -1,7 +1,7 @@
 {
   "name": "loop4-grid",
   "main": "src/index.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Bootstrap4-compatible CSS grid written in JS for responsive layouts building. Supports correct mirroring for RTL languages.",
   "author": "Artem Vorobev at loop4.com <artem.vorobev@loop4.com>",
   "license": "MIT",
