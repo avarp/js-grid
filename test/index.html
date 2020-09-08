@@ -14,11 +14,7 @@
       outline: 1px dotted lime;
       outline-offset: -1px;
     }
-    [class*="col"]:after {
-      content: attr(class);
-      text-align: center;
-      display: block;
-      width: 100%;
+    [class*="col"] > div {
       outline: 1px dashed red;
       outline-offset: -1px;
     }
@@ -26,18 +22,50 @@
 </head>
 <body class="m-0">
   <div class="container p-4x">
-    <div class="row mb-0">
-      <div class="col"></div>
-      <div class="col flex-grow-0"></div>
+
+    <h2>Responsiveness test</h1>
+    <p>Dependency of columns width on the screen size.</p>
+
+    <div class="row">
+      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2"><div>col-sm-6 col-md-4 col-lg-3 col-xl-2</div></div>
+      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2"><div>col-sm-6 col-md-4 col-lg-3 col-xl-2</div></div>
+      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2"><div>col-sm-6 col-md-4 col-lg-3 col-xl-2</div></div>
+      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2"><div>col-sm-6 col-md-4 col-lg-3 col-xl-2</div></div>
+      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2"><div>col-sm-6 col-md-4 col-lg-3 col-xl-2</div></div>
+      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2"><div>col-sm-6 col-md-4 col-lg-3 col-xl-2</div></div>
     </div>
-    <div class="row gutt-2x mt-0">
-      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2"></div>
-      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2"></div>
-      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2"></div>
-      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2"></div>
-      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2"></div>
-      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2"></div>
+
+    <h2>Gutters</h2>
+    <p>Dependency of grid's gutter width on the screen size.</p>
+
+    <div class="row gutt-sm-0 gutt-md-1x gutt-lg-2x gutt-xl-4x">
+      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2"><div>col-sm-6 col-md-4 col-lg-3 col-xl-2</div></div>
+      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2"><div>col-sm-6 col-md-4 col-lg-3 col-xl-2</div></div>
+      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2"><div>col-sm-6 col-md-4 col-lg-3 col-xl-2</div></div>
+      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2"><div>col-sm-6 col-md-4 col-lg-3 col-xl-2</div></div>
+      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2"><div>col-sm-6 col-md-4 col-lg-3 col-xl-2</div></div>
+      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2"><div>col-sm-6 col-md-4 col-lg-3 col-xl-2</div></div>
     </div>
+
+    <h2>Maximum and minimum width</h2>
+
+    <div class="row">
+      <div class="col">
+        <div>Column has maximum width</div>
+      </div>
+      <div class="col flex-grow-0">
+        <div>Min width</div>
+      </div>
+    </div>
+
+    <h2>Width</h2>
+
+    <input type="text" class="w-100" placeholder="w-100"><br>
+    <input type="text" class="w-75" placeholder="w-75"><br>
+    <input type="text" class="w-50" placeholder="w-50"><br>
+    <input type="text" class="w-25" placeholder="w-25"><br>
+    <input type="text" class="w-auto" placeholder="w-auto"><br>
+    
   </div>
 </body>
 </html>

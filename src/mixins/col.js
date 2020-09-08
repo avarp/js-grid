@@ -10,19 +10,17 @@ export default function(deviceRule, columns) {
     )
   }
   var selector = deviceRule ? '.col-'+deviceRule : '.col'
-  rules.push(
+  rules = rules.concat([
     [selector+'-auto', {
       flex: '0 0 auto',
       width: 'auto',
       maxWidth: '100%'
-    }]
-  )
-  rules.push(
+    }],
     [selector, {
       flexBasis: 0,
       flexGrow: 1,
       maxWidth: '100%'
     }]
-  )
+  ])
   return rules
 }

@@ -7,7 +7,7 @@ export default function(deviceRule, columns, rtl) {
       offsetLeft2 = deviceRule ? `.col-ml-${deviceRule}-${width}` : `.col-ml-${width}`,
       offsetRight = deviceRule ? `.col-mr-${deviceRule}-${width}` : `.col-mr-${width}`
 
-    rules.concat([
+    rules = rules.concat([
       [offsetLeft1 + ',' + offsetLeft2, {
         [rtl ? 'marginRight' : 'marginLeft']: (width*100/columns) + '%'
       }],

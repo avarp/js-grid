@@ -4,16 +4,14 @@ export default function(deviceRule, gutters) {
   for (var key in gutters) {
     let
       selector = deviceRule ? `.gutt-${deviceRule}-${key}` : `.gutt-${key}`
-    rules.push(
+    rules = rules.concat([
       ['.row'+selector, {
         margin: '-'+half(gutters[key])
-      }]
-    )
-    rules.push(
+      }],
       ['.row'+selector+'>[class^="col"]', {
         padding: half(gutters[key])
       }]
-    )
+    ])
   }
   return rules
 }

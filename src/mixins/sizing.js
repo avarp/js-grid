@@ -6,7 +6,7 @@ export default function(deviceRule, variants) {
       selector = deviceRule ? deviceRule+'-'+variant : variant,
       value = variants[variant]
 
-    rules.concat([
+    rules = rules.concat([
       ['.w-'+selector, {
         width: value + ' !important'
       }],

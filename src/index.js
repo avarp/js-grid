@@ -40,6 +40,10 @@ function generateGrid({devices, containers, columns, gutters, margins, paddings,
       boxSizing: 'border-box'
     }],
 
+    ['.container', {
+      boxSizing: 'border-box'
+    }],
+
     ['[hidden]', {
       display: 'none !important'
     }]
