@@ -1,2 +1,2 @@
 # loop4-grid
-CSS in JS boilerplate for responsive layouts building.
+Bootstrap4-compatible CSS grid written in JS for responsive layouts building. Supports correct mirroring for RTL languages.

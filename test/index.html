@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+  <script src="/grid.min.js"></script>
+  <style>
+    .container {
+      outline: 1px dotted cyan;
+      outline-offset: -1px;
+    }
+    .row {
+      outline: 1px dotted lime;
+      outline-offset: -1px;
+    }
+    [class*="col"]:after {
+      content: attr(class);
+      text-align: center;
+      display: block;
+      width: 100%;
+      outline: 1px dashed red;
+      outline-offset: -1px;
+    }
+  </style>
+</head>
+<body class="m-0">
+  <div class="container p-4x">
+    <div class="row mb-0">
+      <div class="col"></div>
+      <div class="col flex-grow-0"></div>
+    </div>
+    <div class="row gutt-2x mt-0">
+      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2"></div>
+      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2"></div>
+      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2"></div>
+      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2"></div>
+      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2"></div>
+      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2"></div>
+    </div>
+  </div>
+</body>
+</html>
