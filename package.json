@@ -1,6 +1,7 @@
 {
   "name": "avarp-js-grid",
-  "version": "1.0.0",
+  "main": "src/index.js",
+  "version": "1.0.1",
   "description": "Bootstrap4-compatible CSS grid written in JS for responsive layouts building. Supports correct mirroring for RTL languages.",
   "repository": {
     "type": "git",
