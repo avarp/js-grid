@@ -1,11 +1,17 @@
 {
-  "name": "loop4-grid",
-  "main": "src/index.js",
-  "version": "1.0.2",
+  "name": "@avarp/js-grid",
+  "version": "1.0.0",
   "description": "Bootstrap4-compatible CSS grid written in JS for responsive layouts building. Supports correct mirroring for RTL languages.",
-  "author": "Artem Vorobev at loop4.com <artem.vorobev@loop4.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avarp/js-grid.git"
+  },
+  "author": "Artem Vorobev <artem.v.mailbox@gmail.com>",
   "license": "MIT",
-  "repository": "https://github.com/artem-vorobev/loop4-grid",
+  "bugs": {
+    "url": "https://github.com/avarp/js-grid/issues"
+  },
+  "homepage": "https://github.com/avarp/js-grid#readme",
   "scripts": {
     "dev": "webpack --mode=development",
     "build": "webpack --mode=production --progress --hide-modules"
@@ -15,7 +21,6 @@
     "@babel/core": "7.7.x",
     "@babel/preset-env": "7.7.x",
     "babel-loader": "8.0.x",
-    "clean-webpack-plugin": "^3.0.0",
     "webpack": "4.41.x",
     "webpack-cli": "3.3.10"
   }
